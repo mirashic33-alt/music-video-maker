@@ -60,6 +60,13 @@ def load_theme() -> dict:
             return _map(raw)
     except Exception:
         pass
+    # дефолтная тема, если state.json нет или тема не выбрана (напр. при первом запуске)
+    try:
+        default_theme = Path(__file__).parent.parent / "themes" / "dark_orange_v3.json"
+        if default_theme.exists():
+            return _map(json.loads(default_theme.read_text(encoding="utf-8")))
+    except Exception:
+        pass
     return dict(_DEFAULTS)
 
 
