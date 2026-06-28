@@ -29,3 +29,6 @@ Thumbs.db
 
 # Тестовые/служебные файлы
 test_particles.py
+
+# Личная шпаргалка по git (не часть проекта)
+GIT_GUIDE.md
