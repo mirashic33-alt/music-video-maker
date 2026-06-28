@@ -17,7 +17,21 @@ pip install PySide6 requests
 python main.pyw
 ```
 
-Нужен **ffmpeg** в `PATH` (или положите `ffmpeg.exe` / `ffprobe.exe` в папку `bin/`).
+### Установка FFmpeg (обязательно)
+
+Программа склеивает видео и звук через **ffmpeg** — без него сборка не заработает.
+
+**Windows (проще всего):**
+1. Скачайте сборку с https://www.gyan.dev/ffmpeg/builds/ (вариант «ffmpeg-release-essentials.zip») или с https://ffmpeg.org/download.html
+2. Распакуйте архив, найдите внутри `ffmpeg.exe` и `ffprobe.exe` (папка `bin`).
+3. Скопируйте оба файла в папку `bin/` рядом с программой (создайте её, если нет). Готово — программа их подхватит автоматически.
+
+Как вариант — добавить ffmpeg в системный `PATH`, тогда папка `bin/` не нужна.
+
+Проверить, что ffmpeg виден системе:
+```
+ffmpeg -version
+```
 
 ## Как пользоваться
 
