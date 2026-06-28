@@ -1,0 +1,12 @@
+{
+    "bg_color":            "#100e0b",
+    "chat_bg":             "#0c0b09",
+    "input_bg":            "#1a1814",
+    "text_color":          "#e6ddd0",
+    "border_color":        "#2c2720",
+    "button_bg":           "#1c1a16",
+    "button_hover_bg":     "#2a261e",
+    "button_pressed_bg":   "#362e24",
+    "accent_color":        "#f07c2a",
+    "bubble_prefix_color": "#5a5248"
+}
